@@ -1,0 +1,328 @@
+/* Add your font  */
+@font-face {
+    font-family: 'kanit';
+    src: url('font/kanit/kanit-regular-webfont.woff2') format('woff2'),
+         url('font/kanit/kanit-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'poppins';
+    src: url('font/poppins/poppins-regular-webfont.woff2') format('woff2'),
+         url('font/poppins/poppins-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'poppinsbold';
+    src: url('font/poppins/poppins-bold-webfont.woff2') format('woff2'),
+         url('font/poppins/poppins-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* ============== Base ============== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit';
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+    transition: all .2s ease;
+}
+a:hover {
+    opacity: .6;
+}
+
+input {
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    color: #000;
+}
+
+ul, li {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+/* ============== Class general use ============== */
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+
+:root {
+    --back: #000;
+}
+
+/* ------- Font size ------- */
+.text-xs {
+    font-size: 0.75rem;
+    line-height: 1rem;
+}
+.text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+.text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+.text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+}
+.text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+.text-2x {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+.text-3x {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+}
+.text-4x {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+}
+.text-5x {
+    font-size: 3rem;
+    line-height: 1;
+}
+
+/* ------- Form Frequently used ------- */
+.text-support {
+    display: block;
+    text-align: center;
+}
+
+.text-heading {
+    padding: 2rem 0;
+    font-size: 54px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.text-description {
+    text-align: center;
+    color: #333;
+}
+
+.btn-base {
+    padding-top: 1rem;
+    text-align: center;
+}
+
+.btn-base .btn {
+    font-size: 1rem;
+    padding: .7rem 1.2rem;
+    background-color: #000;
+    color: #fff;
+    border-radius: 100px;
+    text-align: center;
+    transition: .2s ease;
+}
+.btn-base .btn:hover {
+    opacity: .7;
+}
+
+/* ============== Navbar ============== */
+.nav-support {
+    width: 100%;
+    background-color: #eee;
+}
+
+.support-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-support-logo {
+    width: 25px;
+}
+.nav-support-logo img {
+    width: 100%;
+}
+
+.nav-support-menu {
+    display: flex;
+}
+.nav-support-menu li {
+    padding: 0 1rem;
+    border-right: 1px solid #000;
+}
+.nav-support-menu li:last-child {
+    border-right: none;
+    padding-right: 0;
+}
+
+.nav-menu {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    overflow: none;
+    width: 100%;
+    background-color: #fff;
+}
+
+.menu-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    align-items: center;
+    padding: .2rem 0;
+}
+
+.nav-menu .menu-logo {
+    width: 70px;
+}
+.nav-menu .menu-logo img {
+    width: 100%;
+}
+
+.menu-menubar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.menu-container li {
+    border-bottom: 2px solid #fff;
+    transition: all .2s ease;
+}
+.menu-menubar li:hover {
+    border-bottom: 2px solid #000;
+}
+
+.menu-menubar li a:hover {
+    opacity: 1 !important;
+}
+
+.menu-search {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.menu-search .search {
+    display: flex;
+    align-items: center;
+}
+
+.menu-search .search svg,
+.menu-search .search i {
+    padding: 13px;
+    border-radius: 50%;
+    background-color: #eee;
+    transition: all .2s ease;
+    z-index: 11;
+}
+.menu-search .search svg:hover,
+.menu-search .search i:hover {
+    background-color: #ddd;
+}
+
+.menu-search .search input {
+    font-size: 16px;
+    margin-left: -40px;
+    padding: .6rem;
+    padding-left: 45px;
+    border-radius: 50px;
+    background-color: #eee;
+    transition: all .2s ease;
+}
+
+.search-heart a {
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 0 1rem;
+    border-radius: 50%;
+}
+.search-heart a:hover {
+    background-color: #ddd;
+}
+.search-heart a i,
+.search-heart a svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-49%, -49%);
+}
+
+.search-cart a {
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.search-cart a:hover {
+    background-color: #ddd;
+}
+.search-cart a i,
+.search-cart a svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-49%, -49%);
+}
+
+/* ============== Header ============== */
+.header {
+    width: 100%;
+}
+
+.hd-advert {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+    background-color: #eee;
+    color: #333;
+}
+
+.hd-advert a {
+    border-bottom: 2px solid #000;
+}
+
+.hd-advert-img {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.hd-advert-img a {
+    opacity: 1 !important;
+}
+
+
+/* ============== Content 1 ============== */
+.content {
+    width: 100%;
+    margin: 2rem 0;
+}
+

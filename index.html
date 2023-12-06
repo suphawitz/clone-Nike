@@ -7,7 +7,7 @@
     <title>Nike Clone - Su_phawit</title>
 
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="images/netflix.png"/>
+    <link rel="icon" type="image/png" href="img/logo-circle.png"/>
 
     <link rel="stylesheet" href="fontawsome/css/all.min.css">
 </head>
@@ -16,56 +16,61 @@
 
     <!-- Navbar -->
     <nav class="navbar">
-        <div class="container">
-            <div class="nav-support">
+        <div class="nav-support">
+            <div class="container support-container">
                 <div class="nav-support-logo">
-                    <img src="" alt="">
+                    <img src="img/logo-jordan.png" alt="">
                 </div>
                 <ul class="nav-support-menu">
-                    <li class=""><a href="#">ค้นหาร้านค้า</a></li>
-                    <li class=""><a href="#">ความช่วยเหลือ</a></li>
-                    <li class=""><a href="#">เข้าร่วมกับเรา</a></li>
-                    <li class=""><a href="#">ลงชื่อเข้าใช้</a></li>
+                    <li class="text-sm"><a href="#">ค้นหาร้านค้า</a></li>
+                    <li class="text-sm"><a href="#">ความช่วยเหลือ</a></li>
+                    <li class="text-sm"><a href="#">เข้าร่วมกับเรา</a></li>
+                    <li class="text-sm"><a href="#">ลงชื่อเข้าใช้</a></li>
                 </ul>
-            </div>
-    
-            <div class="nav-menu">
-                <div class="menu-logo">
-                    <img src="" alt="">
-                </div>
-                <ul class="menu-menubar">
-                    <li class=""><a href="#">ใหม่และโดดเด่น</a></li>
-                    <li class=""><a href="#">ผู้ชาย</a></li>
-                    <li class=""><a href="#">ผู้หญิง</a></li>
-                    <li class=""><a href="#">เด็ก</a></li>
-                    <li class=""><a href="#">ลดราคา</a></li>
-                    <li class=""><a href="#">ของขวัญ</a></li>
-                    <li class=""><a href="#">SNKRS</a></li>
-                </ul>
-                <div class="menu-search">
-                    <div class="search">
-                        <input type="text" placeholder="ค้นหา">
-                        <div class="search-heart"><i class="fa-regular fa-heart"></i></div>
-                        <div class="search-cart"><i class="fa-solid fa-cart-shopping"></i></div>
-                    </div>
-                </div>
             </div>
         </div>
     </nav>
+
+    <!-- Navbar sticky -->
+    <div class="nav-menu">
+        <div class="container menu-container">
+            <div class="menu-logo">
+                <img src="img/logo-nike.png" alt="">
+            </div>
+            <ul class="menu-menubar">
+                <li class="text-lg"><a href="#">ใหม่และโดดเด่น</a></li>
+                <li class="text-lg"><a href="#">ผู้ชาย</a></li>
+                <li class="text-lg"><a href="#">ผู้หญิง</a></li>
+                <li class="text-lg"><a href="#">เด็ก</a></li>
+                <li class="text-lg"><a href="#">ลดราคา</a></li>
+                <li class="text-lg"><a href="#">ของขวัญ</a></li>
+                <li class="text-lg"><a href="#">SNKRS</a></li>
+            </ul>
+            <div class="menu-search">
+                <div class="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="ค้นหา">
+                </div>
+                <div class="search-heart">
+                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                </div>
+                <div class="search-cart">
+                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- End Navbar -->
 
 
     <!-- Header -->
     <header class="header">
         <div class="hd-advert">
-            <div class="container hd-advert-con">
-                <p>เคลื่อนไหว เลือกซื้อ ออกแบบเอง และเฉลิมฉลองไปกับเรา</p>
-                <span>ไม่ว่าวันนี้จะนึกอยากทำอะไร เป็น Member ไว้ก็ดีกว่า</span>
-                <a href="#">มาร่วมกับเรา</a>
-            </div>
+            <p class="text-base">เคลื่อนไหว เลือกซื้อ ออกแบบเอง และเฉลิมฉลองไปกับเรา</p>
+            <span class="text-xs">ไม่ว่าวันนี้จะนึกอยากทำอะไร เป็น Member ไว้ก็ดีกว่า <a href="#">มาร่วมกับเรา</a></span>
         </div>
         <div class="hd-advert-img">
-            <a href="#"><img src="" alt=""></a>
+            <a href="#"><img src="img/header-advert.jpg" alt=""></a>
         </div>
         <div class="hd-advert-video">
             <video src=""></video>
@@ -73,12 +78,11 @@
     </header>
     <!-- End Header -->
 
-
     <!-- Content 01 -->
     <section class="content">
         <div class="container">
             <div class="ct-info">
-                <span>เร็วนี้</span>
+                <span class="text-support">เร็วนี้</span>
                 <h1 class="text-heading">Nike alphafly 3</h1>
                 <p class="text-description">พร้อมเปลี่ยนทุกสิ่งที่เคยคิดว่าทำได้</p>
 
@@ -165,7 +169,7 @@
     <section class="content-02">
         <div class="container">
             <div class="ct-02-info">
-                <span>เครื่องแต่งกาย Jordan</span>
+                <span class="text-support">เครื่องแต่งกาย Jordan</span>
                 <h1 class="text-heading">ถึงช่วงเทศกาลแล้ว</h1>
                 <p class="text-description">มอบของขวัญที่พร้อมผลักดันการพุ่งทะยานด้วยลุคระดับไอคอนจาก Jordan สำหรับทุกคนในครอบครัว</p>
     
