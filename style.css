@@ -36,6 +36,7 @@ a {
     color: #000;
     text-decoration: none;
     transition: all .2s ease;
+    cursor: pointer;
 }
 a:hover {
     opacity: .6;
@@ -45,12 +46,14 @@ input {
     border: none;
     background-color: transparent;
     outline: none;
+    cursor: pointer;
 }
 
 button {
     border: none;
     background-color: transparent;
     color: #000;
+    cursor: pointer;
 }
 
 ul, li {
@@ -111,6 +114,11 @@ img {
 }
 
 /* ------- Form Frequently used ------- */
+.text-subtopic {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+}
+
 .text-support {
     display: block;
     text-align: center;
@@ -185,6 +193,7 @@ img {
     overflow: none;
     width: 100%;
     background-color: #fff;
+    z-index: 999;
 }
 
 .menu-container {
@@ -319,6 +328,12 @@ img {
     opacity: 1 !important;
 }
 
+.hd-advert-video {
+    width: 100%;
+}
+.hd-advert-video video {
+    width: 100%;
+}
 
 /* ============== Content 1 ============== */
 .content {
@@ -326,3 +341,201 @@ img {
     margin: 2rem 0;
 }
 
+
+/* Popular */
+.popular {
+    margin: 2rem 0;
+}
+
+.popular-cart {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.popular-cart .product-img {
+    width: 300px;
+    padding-bottom: 1rem;
+}
+
+.popular-cart .product-name {
+    font-size: 1.25rem;
+}
+
+
+/* New product */
+.newproduct {
+    padding: 2rem 0;
+}
+
+.newpd-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.newpd-theme {
+    height: 700px;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.newpd-theme img {
+    width: 100%;
+}
+
+.newpd-themedark, 
+.newpd-themelight {
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+}
+
+.newpd-theme span {
+    font-size: 1rem;
+    color: #fff;
+}
+
+.newpd-theme p {
+    font-size: 1.75rem;
+    padding: .5rem 0;
+    color: #fff;
+}
+
+.newpd-themedark .newpd-btn {
+    padding: .5rem 1rem;
+    border-radius: 100px;
+    background-color: #000;
+    color: #fff;
+    transition: .2s ease;
+}
+.newpd-themelight .newpd-btn {
+    padding: .5rem 1rem;
+    border-radius: 100px;
+    background-color: #fff;
+    color: #000;
+    transition: .2s ease;
+}
+.newpd-themedark .newpd-btn:hover,
+.newpd-themelight .newpd-btn:hover {
+    opacity: .8;
+}
+
+
+/* Shopping Cart */
+.shopcart {
+    width: 100%;
+    padding: 2rem 0;
+}
+
+.shc-topic {
+    font-size: 1.25rem;
+    padding-bottom: 1rem;
+}
+.shop-slide {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shc-skip {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.shc-skip a svg,
+.shc-skip a i {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    padding: 0.6rem;
+    background-color: #eee;
+}
+
+.shopcart-grid {
+    display: flex;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+    padding: 10px;
+    gap: 1rem;
+    scroll-padding: 10px;
+}
+.shc-product {
+    flex: 0 0 40%;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+    cursor: pointer;
+}
+
+.shc-product .shc-prd-img {
+    width: 100%;
+    opacity: .8;
+    transition: .2s ease;
+}
+.shc-product .shc-prd-img:hover {
+    opacity: 1;
+}
+
+.shc-prd-img img {
+    height: 400px;
+    object-fit: cover;
+}
+
+.prd-description {
+    padding: .5rem 0;
+    color: #444;
+}
+
+
+/* Don't miss */
+.miss {
+    padding: 2rem 0;
+}
+
+.miss video {
+    width: 100%;
+}
+
+
+/* ============== Content 2 ============== */
+.content-02 {
+    width: 100%;
+}
+
+.ct-02-info {
+    padding-bottom: 5rem;
+}
+
+
+/* Icornic */
+.icornic-grid {
+    display: flex;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+    padding: 10px;
+    gap: 1rem;
+    scroll-padding: 10px;
+}
+.icornic-cart {
+    flex: 0 0 40%;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+    cursor: pointer;
+}
+
+.icornic-cart .cart-img {
+    width: 100%;
+    opacity: .8;
+    transition: .2s ease;
+}
+.icornic-cart .cart-img:hover {
+    opacity: 1;
+}
+
+.icornic-name {
+    font-size: 1.25rem;
+    padding: 1rem 0;
+    color: #444;
+}
