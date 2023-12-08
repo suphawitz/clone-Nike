@@ -539,3 +539,189 @@ img {
     padding: 1rem 0;
     color: #444;
 }
+
+
+/* Sport */
+.sport {
+    width: 100%;
+    padding: 2rem 0;
+}
+
+.sport-grid {
+    display: flex;
+    overflow: auto;
+    gap: 1rem;
+    padding: 10px;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 10px;
+}
+
+.sport-items {
+    flex: 0 0 40%;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+    cursor: pointer;
+}
+
+.sport-items .cart-img {
+    width: 100%;
+    overflow: hidden;
+}
+
+.sport-items .cart-img img {
+    object-fit: cover;
+    height: 500px;
+}
+
+.sport-items .cart-info .cart-name {
+    font-size: 1.25rem;
+    padding-top: 1rem;
+}
+
+.sport-items .cart-info .cart-description {
+    font-size: 1rem;
+    padding: 1rem 0;
+    color: #444;
+}
+
+.sport-items .cart-info .cart-btn a {
+    display: block;
+    font-size: 1rem;
+    padding-top: 2rem;
+    border-bottom: 1px solid #000;
+}
+
+/* Product Basic */
+.basic {
+    width: 100%;
+    padding: 2rem 0;
+}
+
+.basic-grid {
+    display: flex;
+    gap: 1rem;
+}
+
+.basic-img {
+    position: relative;
+    width: 100%;
+}
+.basic-img img {
+    height: 600px;
+    object-fit: cover;
+}
+
+.basic-btn a {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    background-color: #000;
+    color: #fff;
+    border-radius: 100px;
+}
+
+.basic-style {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.style-grid {
+    flex: 0 0 20%;
+}
+
+.basic-style .style-heading {
+    font-size: 1.1rem;
+    padding: 2rem 0;
+}
+
+.basic-style .style-items a {
+    display: block;
+    font-size: 1rem;
+    padding: .5rem 0;
+    color: #444 !important;
+}
+
+
+/* ============== Footer ============== */
+.footer {
+    display: block;
+    padding-top: 2rem;
+    margin-top: 2rem;
+    background-color: #000;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.footer-container-left {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-grow: 2;
+}
+
+.footer-items a {
+    display: block;
+    padding: .3rem 0;
+    color: #555;
+}
+
+.footer-grid .active a {
+    padding: .5rem 0;
+    color: #fff !important;
+}
+
+.footer-contact {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 1rem;
+    flex-grow: 4;
+}
+
+.footer-contact a i,
+.footer-contact a svg {
+    width: 20px;
+    height: 20px;
+    display: block;
+    padding: .5rem;
+    background-color: #555;
+    border-radius: 50%;
+}
+
+.footer-help {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4rem;
+    padding-bottom: 1rem;
+}
+
+.ft-location {
+    display: flex;
+    gap: 1rem;
+    color: #555;
+    
+}
+
+.ft-location a {
+    color: #fff;
+}
+
+.ft-location a i,
+.ft-location a svg {
+    padding-right: .5rem;
+}
+
+.ft-recommend {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
