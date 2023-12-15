@@ -206,6 +206,9 @@ img {
 .nav-menu .menu-logo {
     width: 70px;
 }
+.nav-menu .menu-logo:hover {
+    opacity: 1;
+}
 .nav-menu .menu-logo img {
     width: 100%;
 }
@@ -242,7 +245,9 @@ img {
 
 .menu-search .search svg,
 .menu-search .search i {
-    padding: 13px;
+    display: block;
+    margin-right: 5px;
+    padding: 9.5px;
     border-radius: 50%;
     background-color: #eee;
     transition: all .2s ease;
