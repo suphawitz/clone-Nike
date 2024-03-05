@@ -33,7 +33,7 @@
 
     <!-- Navbar sticky -->
     <div class="nav-menu">
-        <div class="container menu-container">
+        <div class="container menu-container topnav" id="hamOpen">
             <a href="https://www.nike.com/th/" class="menu-logo">
                 <img src="img/logo-nike.png" alt="">
             </a>
@@ -57,6 +57,8 @@
                 <div class="search-cart">
                     <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
                 </div>
+            </div>
+            <a style="font-size:15px;" class="icon menu-ham" onclick="navHam()">&#9776;</a>
             </div>
         </div>
     </div>
@@ -514,6 +516,16 @@
     </footer>
     <!-- End Footer -->
 
+    <script>
+        function navHam() {
+            var x = document.getElementById("hamOpen");
+            if (x.className === "container menu-container topnav") {
+                x.className += " nav-responsive";
+            } else {
+                x.className = "container menu-container topnav";
+            }
+        }
+    </script>
 
     <!-- Script -->
     <script src="fontawsome/js/all.min.js"></script>
