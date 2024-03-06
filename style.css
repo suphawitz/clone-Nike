@@ -222,6 +222,12 @@ img {
     gap: 1rem;
 }
 
+/* ----- Navbar responsive ----- */
+
+.menu-ham {
+    display: none;
+}
+
 .nav-responsive .menu-menubar {
     display: block !important;
     flex-direction: column;
@@ -776,6 +782,7 @@ img {
     }
 
     .menu-ham {
+        display: block !important;
         position: absolute;
         right: 1rem;
     }
