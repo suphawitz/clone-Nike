@@ -7,6 +7,8 @@ Cloning this website is not intended to be plagiarized in any way. It's just pra
 
 ## Template your project
 
+ - [https://sph-clone-nike.netlify.app](https://sph-clone-nike.netlify.app)
+
 ![enter image description here](img/template-mywebsite.png)
 # Creadite
  - [Nike website](https://www.nike.com/th/)
